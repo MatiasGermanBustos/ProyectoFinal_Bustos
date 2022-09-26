@@ -56,6 +56,10 @@ body{
     border-color:black;
     border: solid 1px black;
     width: 4vw;
+    transition: all 0.8s;
+}
+.logo_nav:hover{
+    transform: scale(1.2);
 }
 
 /* Style Redes Sociales */
