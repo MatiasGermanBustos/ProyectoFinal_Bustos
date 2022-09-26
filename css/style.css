@@ -42,8 +42,15 @@ body{
 }
 .nav-item{
     margin: 0 10rem;
+    transition: all .8s;
 }
-
+.nav-item:hover{
+    text-decoration: underline; 
+    transform: scale(1.3);
+}
+.nav-link:hover{
+    color: #27cdf7 !important;
+}
 .logo_nav{
     border-radius: 50%;
     border-color:black;
@@ -304,7 +311,7 @@ body{
 
 .btn:hover {
     width: 20rem;
-    background: #73e3ff;
+    background: #73e3ff !important;
     border-radius: 2rem;
 }
 
