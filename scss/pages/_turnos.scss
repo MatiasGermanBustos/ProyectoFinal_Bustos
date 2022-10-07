@@ -1,0 +1,40 @@
+// turnos
+
+.turnos {
+    @include flex (column, center, center);
+
+    & p {
+    font-family: $fuente-3;
+    font-size: 2rem;
+    text-align: center;}
+
+    & .turnos_galeria {
+    @include flex (column, center, center);
+    margin: 3rem;
+    gap: 1rem;
+    }
+
+    & .img_turnos{
+    width: 25vw;
+    border-radius: 3rem;
+    box-shadow:0px 9px 20px 0px $color-turquesa;
+    }
+}
+
+.btn{
+    color: black;
+    background-color: #35c7f3;
+    width: 10rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    margin: 5rem auto;
+    cursor: pointer;
+    transition: ease-in-out all .8s;
+        
+    &:hover {
+    width: 20rem;
+    background: #73e3ff !important;
+    border-radius: 2rem;
+    }
+}
+

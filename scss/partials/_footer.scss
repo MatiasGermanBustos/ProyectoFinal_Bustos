@@ -1,9 +1,7 @@
 //footer
 
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
     height: $med-grande;
     background: linear-gradient(to right, $color-turquesa, $color-negro, $color-turquesa);
 

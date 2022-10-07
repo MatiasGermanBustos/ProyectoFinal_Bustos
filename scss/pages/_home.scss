@@ -36,8 +36,7 @@
 }
 // video
 .cuidados_video{
-    display: flex;
-    justify-content: center;
+    @include flex(row,center,center);
     margin:2rem;
     
     & iframe{

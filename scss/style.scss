@@ -4,11 +4,14 @@
 /* Variables */
 @import "./utilidades/variables.scss";
 
-/* header */
-@import "./partials/header";
+//Mixin
+@import "./utilidades/mixin";
 
 /*normalize*/
 @import "./utilidades/normalize.scss";
+
+/* header */
+@import "./partials/header";
 
 /*footer*/
 @import "./partials/footer";
@@ -20,5 +23,17 @@
 @import "./pages/nosotros.scss";
 
 //estilos
-@import "./pages/estilos"
+@import "./pages/estilos";
+
+// turnos
+@import "./pages/turnos";
+
+// Donde estamos
+@import "./pages/dondeestamos";
+
+//Media Querys
+@import "./utilidades/mediaquerys";
+
+
+
 

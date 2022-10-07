@@ -1,0 +1,193 @@
+// Media Querys
+
+@media only screen and (max-width:700px) {
+    /* Logo NavBar */
+    .logo_nav {
+        width: 20vw;
+    }
+
+    .titulo {
+        font-size: $med-chica  !important;
+    }
+
+    /* Nosotros */
+    .nosotros {
+        @include flex (column, center, center);
+    
+        & p {
+        font-family: $fuente-3;
+        font-size: 2rem;
+        line-height: 1;
+        }
+
+        & .img_nosotros {
+        width: 60vw;
+        margin: 3rem;
+        border-radius: 3rem;
+        box-shadow: 0px 9px 20px 0px $color-turquesa;
+        }
+    }
+
+    /* Galeria */
+    .galeria {
+        @include flex (column, center, center);
+        gap: 3rem;
+
+        & .galeria_foto:nth-of-type(1) {
+            width: 80%;
+        }
+
+        & .galeria_foto:nth-of-type(2) {
+            width: 80%;
+        }
+
+        & .galeria_foto:nth-of-type(3) {
+            width: 80%;
+        }
+    }
+
+    .galeria_estilos {
+        @include flex (column, center, center);
+        gap: 3rem;
+    
+        & .galeria_estilos_foto:nth-of-type(1) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(2) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(3) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(4) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(5) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(6) {
+        width: 100%;
+        }
+    }
+
+    // Titulo
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .donde_estamos__maps {
+        width: 95%;
+    }
+
+    /* Footer */
+    .texto_footer {
+        font-size: 30rem;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .header-logo{
+        .logo{
+            border-radius: 50%;
+            border-color:#0f0909;
+            border: solid 1px #0f0909;
+            width: 75vw;
+        }
+    }
+
+    /* Logo NavBar */
+    .navbar{
+        .logo_nav {
+            width: 15vw;
+        }
+    }
+
+    /* Nosotros */
+    .nosotros {
+        @include flex (column, center, center);
+
+        & .titulo {
+            font-size: 1.9rem !important;
+        }
+
+        & p {
+            font-family: $fuente-3;
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+
+        & .img_nosotros {
+            width: 60vw;
+            margin: 3rem;
+            border-radius: 3rem;
+            box-shadow: 0px 9px 20px 0px $color-turquesa;
+        }
+    }
+
+    /* Galeria */
+    .galeria {
+        @include flex (column, center, center);
+        
+        & .galeria_foto:nth-of-type(1) {
+            width: 100%;
+        }
+
+        & .galeria_foto:nth-of-type(2) {
+            width: 100%;
+        }
+
+        & .galeria_foto:nth-of-type(3) {
+            width: 100%;
+        }
+    }
+
+    .galeria_estilos {
+        
+        gap: 3rem;
+    
+        & .galeria_estilos_foto:nth-of-type(1) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(2) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(3) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(4) {
+        width: 100%;
+        }
+
+        & .galeria_estilos_foto:nth-of-type(5) {
+        width: 100%;
+        }
+
+        &   .galeria_estilos_foto:nth-of-type(6) {
+        width: 100%;
+        }
+    }
+    // Titulo
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .donde_estamos__maps {
+        width: 95%;
+    }
+
+    /* Footer */
+    .texto_footer {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,29 @@
+// donde estamos
+
+.titulo{
+    font-family: $fuente-1;
+    margin: $med-chica 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.donde_estamos{
+    @include flex (column, center, center);
+
+    & p {
+    font-family: $fuente-3;
+    font-size: 2rem;
+    margin: 3rem 7rem;
+    line-height: 1.5;
+    text-align: center;
+    }
+
+    & .donde_estamos__maps{
+    width: 50vw;
+    height: 40vh;
+    border-radius: 2rem;
+    box-shadow:0px 9px 20px 0px $color-turquesa;
+    margin: 3rem auto;
+    }
+}

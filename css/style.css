@@ -1,48 +1,6 @@
 /*Index*/
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Sedgwick+Ave&display=swap");
 /* Variables */
-/* header */
-.navbar {
-  font-family: "Sedgwick Ave";
-}
-.navbar-nav {
-  margin: 0 auto;
-}
-.navbar .nav-item {
-  margin: 0 8rem;
-  transition: all 0.8s;
-}
-.navbar .nav-item:hover {
-  text-decoration: underline;
-  transform: scale(1.3);
-}
-.navbar .nav-link:hover {
-  color: #27cdf7 !important;
-}
-.navbar .logo_nav {
-  border-radius: 50%;
-  border-color: black;
-  border: solid 1px black;
-  width: 4vw;
-  transition: all 0.8s;
-}
-.navbar .logo_nav:hover {
-  transform: scale(1.2);
-}
-
-.header-logo {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(to right, #104549, #0f0909, #104549);
-}
-.header-logo .logo {
-  border-radius: 50%;
-  border-color: #0f0909;
-  border: solid 1px #0f0909;
-  width: 18vw;
-}
-
 /*normalize*/
 * {
   margin: 0;
@@ -112,9 +70,54 @@ body {
   border-radius: 1rem 0 0 1rem;
 }
 
+/* header */
+.navbar {
+  font-family: "Sedgwick Ave";
+}
+.navbar-nav {
+  margin: 0 auto;
+}
+.navbar .nav-item {
+  margin: 0 8rem;
+  transition: all 0.8s;
+}
+.navbar .nav-item:hover {
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+.navbar .nav-link:hover {
+  color: #27cdf7 !important;
+}
+.navbar .logo_nav {
+  border-radius: 50%;
+  border-color: black;
+  border: solid 1px black;
+  width: 4vw;
+  transition: all 0.8s;
+}
+.navbar .logo_nav:hover {
+  transform: scale(1.2);
+}
+
+.header-logo {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #104549, #0f0909, #104549);
+}
+.header-logo .logo {
+  border-radius: 50%;
+  border-color: #0f0909;
+  border: solid 1px #0f0909;
+  width: 18vw;
+}
+
 /*footer*/
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10rem;
@@ -164,7 +167,9 @@ body {
 
 .cuidados_video {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 2rem;
 }
 .cuidados_video iframe {
@@ -174,6 +179,8 @@ body {
 
 .nosotros {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .nosotros p {
@@ -279,6 +286,236 @@ body {
   margin-bottom: 2.5rem;
   width: 25vw;
   box-shadow: 0px 9px 20px 0px #104549;
+}
+
+.turnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.turnos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.turnos .turnos_galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  gap: 1rem;
+}
+.turnos .img_turnos {
+  width: 25vw;
+  border-radius: 3rem;
+  box-shadow: 0px 9px 20px 0px #104549;
+}
+
+.btn {
+  color: black;
+  background-color: #35c7f3;
+  width: 10rem;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  margin: 5rem auto;
+  cursor: pointer;
+  transition: ease-in-out all 0.8s;
+}
+.btn:hover {
+  width: 20rem;
+  background: #73e3ff !important;
+  border-radius: 2rem;
+}
+
+.titulo {
+  font-family: "Sedgwick Ave";
+  margin: 2.5rem 0;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.donde_estamos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.donde_estamos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 3rem 7rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.donde_estamos .donde_estamos__maps {
+  width: 50vw;
+  height: 40vh;
+  border-radius: 2rem;
+  box-shadow: 0px 9px 20px 0px #104549;
+  margin: 3rem auto;
+}
+
+@media only screen and (max-width: 700px) {
+  /* Logo NavBar */
+  .logo_nav {
+    width: 20vw;
+  }
+  .titulo {
+    font-size: 2.5rem !important;
+  }
+  /* Nosotros */
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .nosotros .img_nosotros {
+    width: 60vw;
+    margin: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0px 9px 20px 0px #104549;
+  }
+  /* Galeria */
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .galeria .galeria_foto:nth-of-type(1) {
+    width: 80%;
+  }
+  .galeria .galeria_foto:nth-of-type(2) {
+    width: 80%;
+  }
+  .galeria .galeria_foto:nth-of-type(3) {
+    width: 80%;
+  }
+  .galeria_estilos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(1) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(2) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(3) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(4) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(5) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(6) {
+    width: 100%;
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+  .donde_estamos__maps {
+    width: 95%;
+  }
+  /* Footer */
+  .texto_footer {
+    font-size: 30rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header-logo .logo {
+    border-radius: 50%;
+    border-color: #0f0909;
+    border: solid 1px #0f0909;
+    width: 75vw;
+  }
+  /* Logo NavBar */
+  .navbar .logo_nav {
+    width: 15vw;
+  }
+  /* Nosotros */
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros .titulo {
+    font-size: 1.9rem !important;
+  }
+  .nosotros p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  .nosotros .img_nosotros {
+    width: 60vw;
+    margin: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0px 9px 20px 0px #104549;
+  }
+  /* Galeria */
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria .galeria_foto:nth-of-type(1) {
+    width: 100%;
+  }
+  .galeria .galeria_foto:nth-of-type(2) {
+    width: 100%;
+  }
+  .galeria .galeria_foto:nth-of-type(3) {
+    width: 100%;
+  }
+  .galeria_estilos {
+    gap: 3rem;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(1) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(2) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(3) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(4) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(5) {
+    width: 100%;
+  }
+  .galeria_estilos .galeria_estilos_foto:nth-of-type(6) {
+    width: 100%;
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+  .donde_estamos__maps {
+    width: 95%;
+  }
+  /* Footer */
+  .texto_footer {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,8 +30,7 @@
 
 .header-logo{
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
+    @include flex (column, center, center);
     background: linear-gradient(to right, $color-turquesa, $color-negro, $color-turquesa);
     
 
