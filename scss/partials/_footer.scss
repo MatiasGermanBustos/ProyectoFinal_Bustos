@@ -1,0 +1,16 @@
+//footer
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $med-grande;
+    background: linear-gradient(to right, $color-turquesa, $color-negro, $color-turquesa);
+
+    & .texto_footer{
+        color: $color-blanco;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif
+        }
+}

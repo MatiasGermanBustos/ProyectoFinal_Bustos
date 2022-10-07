@@ -1,0 +1,47 @@
+
+// home
+.titulo{
+    font-family: $fuente-1;
+    margin: 2.5rem 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: stretch;
+    margin: 0 2rem;
+    padding: 0 5rem;
+
+    & .galeria_foto:nth-of-type(1){
+        grid-column:1/5 ;
+        margin-bottom: $med-chica;
+        width: 25vw;
+        box-shadow:0px 9px 20px 0px $color-turquesa
+    }
+    & .galeria_foto:nth-of-type(2){
+        grid-column:5/9 ;
+        margin-bottom: $med-chica;
+        width: 25vw;
+        box-shadow:0px 9px 20px 0px $color-turquesa
+    }
+    & .galeria_foto:nth-of-type(3){
+        grid-column:9/13 ;
+        margin-bottom: $med-chica;
+        width: 25vw;
+        box-shadow:0px 9px 20px 0px $color-turquesa
+    }
+}
+// video
+.cuidados_video{
+    display: flex;
+    justify-content: center;
+    margin:2rem;
+    
+    & iframe{
+    width: 75rem;
+    height: 40rem;
+    }
+}

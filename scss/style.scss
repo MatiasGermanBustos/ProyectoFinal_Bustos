@@ -1,0 +1,24 @@
+/*Index*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Sedgwick+Ave&display=swap');
+
+/* Variables */
+@import "./utilidades/variables.scss";
+
+/* header */
+@import "./partials/header";
+
+/*normalize*/
+@import "./utilidades/normalize.scss";
+
+/*footer*/
+@import "./partials/footer";
+
+/*home*/
+@import "./pages/home.scss";
+
+// nosotros
+@import "./pages/nosotros.scss";
+
+//estilos
+@import "./pages/estilos"
+

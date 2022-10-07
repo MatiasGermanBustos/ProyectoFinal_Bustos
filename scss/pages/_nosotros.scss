@@ -1,0 +1,19 @@
+
+// nosotros
+.nosotros{
+    display: flex;
+    align-items: center;
+    
+    & p{
+    font-family: $fuente-3;
+    font-size: 1.8rem;
+    margin: 5rem 10rem;
+    line-height: 1.5;
+    }
+    & .img_nosotros{
+    width: 30vw;
+    margin: 3rem;
+    border-radius: 3rem;
+    box-shadow:0px 9px 20px 0px $color-turquesa
+    }
+}
