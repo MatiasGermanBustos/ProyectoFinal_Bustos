@@ -9,7 +9,7 @@
     text-align: center;}
 
     & .turnos_galeria {
-    @include flex (column, center, center);
+    @include flex (row, center, stretch);
     margin: 3rem;
     gap: 1rem;
     }

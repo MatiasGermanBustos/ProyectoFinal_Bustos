@@ -301,9 +301,9 @@ body {
 }
 .turnos .turnos_galeria {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin: 3rem;
   gap: 1rem;
 }
