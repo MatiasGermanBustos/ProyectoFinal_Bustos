@@ -1,0 +1,48 @@
+// formulario
+
+.formulario {
+    font-family: $fuente-3;
+    font-size: 2rem;
+    margin: 2rem;
+
+    .formulario_filas input[type="text"],
+    .formulario_filas input[type="email"],
+    .formulario_filas input[type="date"],
+    .formulario_filas input[type="time"]{
+        @include flex (column, center, center);
+        background-color: white;
+        border: 0.1rem solid;
+        width: 80%;
+        font-family: $fuente-3;
+        margin: 2rem auto;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    legend{
+        font-family: $fuente-3;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.btn_formulario{
+    @include flex (column,center,center);
+    color: black;
+    background-color: #35c7f3;
+    width: 15rem;
+    height: 10rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    margin: 5rem auto;
+    cursor: pointer;
+    transition: ease-in-out all .8s;
+        
+    &:hover {
+    width: 30rem;
+    background: #73e3ff !important;
+    border-radius: 2rem;
+    }
+}

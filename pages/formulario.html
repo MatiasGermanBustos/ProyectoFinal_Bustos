@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -13,10 +12,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
-  <title>VPManicuria - Turnos para visitarnos</title>
+  <title>VPManicuria - Formulario de Turnos Para Agendar Visita</title>
 </head>
 
 <body>
+  <!--Section Encabezador -->
   <header>
     <nav class="navbar navbar-expand-lg bg-gradient fs-2">
       <!-- Section Menu -->
@@ -55,32 +55,47 @@
     <a href="https://www.whatsapp.com" class="icon icon_whatsapp" target="_blank"></a>
     <a href="https://www.instagram.com" class="icon icon_instagram" target="_blank"></a>
   </div>
+
   <main>
-    <!--Section Turnos -->
-    <section class="turnos">
-      <h1 class="titulo"> TURNOS </h1>
-      <div class="turnos_galeria">
-        <img class="img_turnos" src="../imagenes/Acrilico/acrilicoturnos.png"
-          alt="Collage uñas celestes, verdes y amarillos">
-        <img class="img_turnos" src="../imagenes/Esmaltado/esmaltadoturnos.jpg"
-          alt="Collage uñas rojas, amarillas y violetas">
-        <img class="img_turnos" src="../imagenes/Esmaltado/trabajosturnos.jpg"
-          alt="Collage uñas rojas, azules y violetas">
+    <!-- section formulario -->
+    <form action="/server/" method="POST" enctype="application/x-www-form-urlencoded" class="formulario">
+      <div class="formulario_filas">
+        <label for="nombre" id="nombre" name="nombre">Nombre y Apellido</label>
+        <input type="text" placeholder="Nombre y Apellido">
+
+        <label for="email" id="email" name="email">Email</label>
+        <input type="email" placeholder="Email">
+
+        <label for="telefono" id="telefono" name="telefono">Telefono</label>
+        <input type="text" placeholder="Telefono">
+
+        <label for="fechadeturno" id="fechadeturno" name="fechadeturno"> Fecha de Turno</label>
+        <input type="date" id="fecha" name="fechadeturno" value="2022-10-19" min="2022-11-01" max="2022-12-31">
+
+        <label for="appt"> Elegi la hora de tu turno, el mismo durara 60 min (Atencion de 9:00am a 06:00pm) </label>
+        <input type="time" id="hora" name="hora" min="09:00" max="18:00" required>
+        <small></small>
+
+        <!-- input tipo radio -->
+        <fieldset>
+          <legend>Tipo de Trabajo</legend>
+          <label for="acrilico">Acrilico</label>
+          <input type="radio" name="tipodetrabajo" id="tipodetrabajo">   
+          
+          <label for="esmaltado">Esmaltado</label>
+          <input type="radio" name="tipodetrabajo" id="tipodetrabajo">
+          
+        </fieldset>
       </div>
-      <p> Solicita tu turno haciendo click aca</p>
 
-      <form action="../pages/formulario.html">
-        <button type="submit" class="btn">RESERVAR</a></button>
-      </form>
-
-    </section>
+      <!-- boton submit -->
+      <button type="submit" class="btn_formulario">ENVIAR</button>
+    </form>
   </main>
-  <!--Section Footer-->
+  <!-- Section Footer -->
   <footer class="footer">
     <div class="texto_footer">
-      Creacion y desarrollo por MATIAS BUSTOS - Mendoza - Argentina
-    </div>
-    </main>
+      Creacion y desarrollo por MATIAS BUSTOS - Mendoza - Argentina</div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

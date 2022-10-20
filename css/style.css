@@ -329,6 +329,56 @@ body {
   border-radius: 2rem;
 }
 
+.formulario {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.formulario .formulario_filas input[type=text],
+.formulario .formulario_filas input[type=email],
+.formulario .formulario_filas input[type=date],
+.formulario .formulario_filas input[type=time] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 0.1rem solid;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.formulario legend {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn_formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #35c7f3;
+  width: 15rem;
+  height: 10rem;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  margin: 5rem auto;
+  cursor: pointer;
+  transition: ease-in-out all 0.8s;
+}
+.btn_formulario:hover {
+  width: 30rem;
+  background: #73e3ff !important;
+  border-radius: 2rem;
+}
+
 .titulo {
   font-family: "Sedgwick Ave";
   margin: 2.5rem 0;
